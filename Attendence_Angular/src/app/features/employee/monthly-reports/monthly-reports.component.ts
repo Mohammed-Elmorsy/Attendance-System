@@ -12,13 +12,16 @@ export class MonthlyReportsComponent implements OnInit {
   month:number = null;
   empID:number = this.authService.getUserPayLoad().id;
   attendanceData:any[];
+  lateTimes:number;
+  absenceTimes:number;
 
   getReport(){
     console.log(this.month);
     this.empService.getMonthlyReport(this.empID, this.month).subscribe(res=>{
       console.log('res '+ res);
       this.attendanceData = res;
-      console.log(this.attendanceData);
+      this.lateTimes = this.attendanceData.filter(element => element.late === true).length;
+      this.absenceTimes = this.attendanceData.filter(element => element.late === null).length;
     }, err=>{
       console.log(err)
     })
@@ -27,6 +30,7 @@ export class MonthlyReportsComponent implements OnInit {
   constructor(private empService:EmployeeService, private authService:AuthService) { }
 
   ngOnInit() {
+
   }
 
 }

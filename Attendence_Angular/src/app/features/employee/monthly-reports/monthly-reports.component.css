@@ -17,3 +17,8 @@ h3{
     padding: 5px;
     border-radius: 5px;
 }
+
+.alert{
+    display: inline-block;
+}
+
