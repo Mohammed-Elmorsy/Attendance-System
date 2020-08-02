@@ -1,0 +1,13 @@
+.navbar{
+    background-color: firebrick;
+}
+
+.navbar a{
+    color: white;
+}
+
+nav a.active,nav a:hover{
+    color: sandybrown;
+}
+
+

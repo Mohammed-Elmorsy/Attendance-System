@@ -1,0 +1,11 @@
+#registerForm{
+    background-image: linear-gradient(to top, #e67c7c, #a71e1e);
+    width: 45%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 50px;
+    color:white;
+    font-family: tahoma;
+    border: 2px groove white;
+}

@@ -1,0 +1,64 @@
+<div class="alert alert-success fade" role="alert">
+  A simple success alert—check it out!
+</div>
+<div id="registerForm">
+<form #myfrm="ngForm" (ngSubmit)="register()">
+    <div class="form-row Register">
+        <div class="form-group col-md-12">
+            <label for="inputFirstName4">FirstName</label>
+            <input type="text" class="form-control" [(ngModel)] = "registerUserData.firstName"
+             #EmpfName="ngModel" ngModel required name="FirstName" placeholder="Enter FirstName">
+             <span class="message" *ngIf="EmpfName.invalid && EmpfName.dirty ">
+              FirstName is Required
+             </span>
+          </div>
+          <div class="form-group col-md-12">
+            <label for="inputLastName4">LastName</label>
+            <input type="text" class="form-control" [(ngModel)] = "registerUserData.lastName"
+             #EmpLName="ngModel" ngModel required name="LastName" placeholder="Enter LastName">
+             <span class="message" *ngIf="EmpLName.invalid && EmpLName.dirty">
+              LastName is Required
+             </span>
+          </div>
+          <div class="form-group col-md-12">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" [(ngModel)] = "registerUserData.address"
+             #EmpAddress="ngModel" ngModel required name="Address" placeholder="Enter Address">
+             <span class="message" *ngIf="EmpAddress.invalid && EmpAddress.dirty">
+              Address is Required
+             </span>
+          </div>
+      <div class="form-group col-md-12 ">
+        <label for="inputEmail4">Email</label>
+        <input type="email" class="form-control" [(ngModel)] = "registerUserData.email"
+        #EmpEmail="ngModel" ngModel required name="Email" placeholder="Enter Email">
+        <span class="message" *ngIf="EmpEmail.invalid && EmpEmail.dirty" >
+          Email is Required
+         </span>
+      </div>
+      
+      <div class="form-group col-md-12">
+        <label for="inputAge4">Age</label>
+        <input type="number" class="form-control" [(ngModel)] = "registerUserData.age"
+         #EmpAge="ngModel" ngModel required name="Age" placeholder="Enter Age">
+         <span class="message" *ngIf="EmpAge.invalid && EmpAge.dirty">
+          Age is Required
+         </span>
+      </div>
+
+      <div class="form-group col-md-12">
+        <label >Role</label><br>
+        <input type="radio" name="role" value="securityEmployee" [(ngModel)] = "registerUserData.role">
+        security employee <br>
+        <input type="radio" name="role" value="employee" [(ngModel)] = "registerUserData.role">
+        employee
+    </div>
+      <button type="submit" class="btn btn-primary" [disabled]="myfrm.invalid" >Register</button>
+
+    </div>
+   
+ 
+  </form>
+</div>
+
+

@@ -1,0 +1,13 @@
+body{
+  background-color:beige;
+}
+#formDiv{
+  background-color: white;
+  width:40%;
+  margin: auto;
+  margin-top: 20px;
+  padding: 20px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  text-align: center;
+}

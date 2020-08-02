@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{
+    background-image: url(./assets/iti.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    user-select: none;
+}
+
+.LogIn{
+    background-color: rgb(163, 213, 241);
+    display: inline-block;
+    /* margin-left: 850px;
+    margin-right: auto;
+    margin-top: 160px; */
+    color: blue;
+    padding: 10px;
+    
+}
+
+.form-row{
+    width: 500px;
+    height: auto;
+    /* background-color: rgb(106, 121, 206); */
+    margin-top: 10px;
+    padding-left: 30px;
+    font-size:larger;
+    font-style: italic;
+    margin-left: 40%;
+    
+}
+
+.message{
+color: rgb(255, 196, 0);
+font-size: small;
+}
+
+.attend{
+    font-style: italic;
+    padding-left: 900px;
+}
+a{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 20px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
